@@ -1,16 +1,11 @@
-import Image from "next/image";
+
 import { SignedOut, SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button";
+import ModeToggle from "@/components/ModeToggle";
 export default function Home() {
   return (
     <div>
-      <SignedOut>
-        <SignInButton mode="model">
-          <button className="bg-red-500">Sign In</button>
-        </SignInButton>
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
+      <h1>Home Page Content</h1>
     </div>
   );
 }
